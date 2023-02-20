@@ -1,0 +1,52 @@
+<!--HTML-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWD Gen</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="import" href="myScript.js">
+</head>
+<body>
+    <!--Main-->
+    <main>
+    <h1>Primo Victor JS</h1>
+    <h2>Password Generator secondo il metodo prompt()</h2>
+
+    <p>Clicca sul bottone <strong>"Genera Passsword"</strong> per generare una password</p>
+    
+    <button onclick="myFunctionPwdGen()">Genera Passsword</button>
+    
+    <p id="password"></p>
+    
+    <!--Script JS PWD Generator-->
+    <script>
+        //1.step: funzione del bottone
+        function myFunctionPwdGen() {
+        //2. step: definizione variabile firstName (nome)
+        let firstName = prompt("Qual è il tuo nome?", "Es. Lara");
+        //3. step: stampa nella console della variabile firstName
+        console.log (firstName);
+        //4. step: definizione variabile lastName (cognome)
+        let lastName = prompt("Qual è il tuo cognome", "Es. Croft")
+        //5. step: stampa nella console della variabile lastName
+        console.log (lastName);
+        //6. step: definizione della variabile color (colore preferito) 
+        let color = prompt("Qual è il tuo colore preferito?", "Es. grigio");
+        //7. step: stampa nella console della variabile color
+        console.log (color);
+        //8. step: generazione dell'output password nel documento HTML
+        document.getElementById("password").innerHTML =
+        "Ecco la tua password: " +firstName +lastName +color +"89";
+        //9. step: stampa nella console della password
+        console.log (firstName +lastName +color);
+      }
+    </script>
+    <!--Script JS PWD Generator-->
+    <!--/Main-->
+    </main>
+</body>
+</html>
+<!--/HTML-->
