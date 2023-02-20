@@ -20,7 +20,7 @@ button {
 }
 
 
-button :hover {
+button:hover {
     background-color: blue;
     border-color: red;
     transition-duration: 0.5s;
